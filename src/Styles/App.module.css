@@ -1,0 +1,43 @@
+.pageContainer {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(12,1fr);
+    height: 1000px;
+   
+    
+
+   
+}
+
+.IntroductionContainer{
+grid-column-start:  2;
+grid-column-end: 9;
+grid-row-start: 1;
+grid-row-end: 7;
+margin-bottom: 300px;
+
+
+
+}
+
+.MinicardContainer{
+  
+    grid-column-start:2;
+    grid-column-end:9;
+    grid-row-start:7;
+    grid-row-end:8;
+}
+
+.AdHome{
+    grid-column-start:1;
+    grid-column-end:10;
+    grid-row-start:8;
+    grid-row-end:10;
+}
+
+.FooterContainer{
+    grid-column-start:1;
+    grid-column-end:10;
+    grid-row-start:10;
+    grid-row-end:12;
+}

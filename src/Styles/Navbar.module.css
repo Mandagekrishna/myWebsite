@@ -1,0 +1,28 @@
+.navdivContainer {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 40px 1fr;
+   justify-items: center;
+   list-style: none;
+   background-color: rgba(169, 169, 169, 0.205);
+   align-items: center;
+   font-family: fantasy;
+   font-size: small;
+   margin-bottom: 10px;
+
+   
+}
+
+.itema{
+        
+     
+text-decoration: none;  
+     grid-column: 7;
+       
+}
+
+.itema:visited{
+    color: inherit;
+}
+
+
