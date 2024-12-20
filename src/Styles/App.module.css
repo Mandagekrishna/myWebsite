@@ -3,6 +3,8 @@
     grid-template-columns: repeat(9,1fr);
     grid-template-rows: repeat(12,1fr);
     height: 1000px;
+    max-width: 4000px;
+    min-width: 100px
    
     
 
@@ -14,7 +16,7 @@ grid-column-start:  2;
 grid-column-end: 9;
 grid-row-start: 1;
 grid-row-end: 7;
-margin-bottom: 300px;
+/* margin-bottom: 300px; */
 
 
 
@@ -40,4 +42,5 @@ margin-bottom: 300px;
     grid-column-end:10;
     grid-row-start:10;
     grid-row-end:12;
+
 }
