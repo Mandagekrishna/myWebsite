@@ -1,5 +1,5 @@
 import styles from '../../Styles/InternshipStyles/InternshipList.module.css'
-import Data from '../../DATA/Internship.json';
+import Data from '../../DATA/ExperiencedJobs.json';
 import {useState} from 'react';
 import React from 'react';
 import Footer from '../HOME/Footer';
@@ -7,11 +7,11 @@ import { NavLink } from 'react-router-dom';
 
 
 
-export default function InternshipList()
+export default function JobsList()
 {
-    let [InternshipData,updateData] = useState(Data);
+    let [JobsData,updateData] = useState(Data);
 
-    console.log(InternshipData);
+    console.log(JobsData);
     return(
 
  
@@ -22,7 +22,7 @@ export default function InternshipList()
                <div className={styles.element1}>
                 
                     <div className={styles.element1a}>
-                        <h1 style={{margin:'0px'}}>Internships</h1>
+                        <h1 >Jobs for Experienced</h1>
                     </div>
                         
                     <input  className={styles.element1b} type='text' placeholder='search box'/>
@@ -33,7 +33,7 @@ export default function InternshipList()
 
                 
              {
-             InternshipData.map(element => ( console.log(element['mustHaveSkills']),
+             JobsData.map(element => ( console.log(element['mustHaveSkills']),
                                                 
                                                 <div className={styles.element2}>
 
@@ -70,7 +70,7 @@ export default function InternshipList()
                                                 </div>
 
                                                 <div className={styles.button}>
-                                                  <NavLink to={`/InternshipDetailsPage/${element['id']}`}>
+                                                  <NavLink to={`/ExperiencedJobsDetailsPage/${element['id']}`}>
                                                   <button className={styles.button} >View Details  &#8594;</button>
                                                   </NavLink>  
                                                 </div>

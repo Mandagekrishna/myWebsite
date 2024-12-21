@@ -1,32 +1,31 @@
 import styles from '../../Styles/DetailsPage.module.css'
-import Data from '../../DATA/Internship.json'
+import Data from '../../DATA/ExperiencedJobs.json'
 import Footer from '../HOME/Footer';
 import {useState} from 'react'
 import { useParams } from 'react-router-dom';
 
 
-export default function InternshipDetailsPage(){
+export default function JobsDetailsPage(){
 
-    let [InternshipData,updateData] = useState(Data);
+    let [JobsData,updateData] = useState(Data);
     let {id} = useParams();
-    let currentInternship = InternshipData.filter(element => element["id"]==id)
-    console.log(currentInternship)
+    let currentJobs = JobsData.filter(element => element["id"]==id)
+    console.log(currentJobs)
     return(
     
     <>
         <div className={styles.container}>
             
             <div className={styles.element1}>
-                <h2>{currentInternship[0]["companyName"]}</h2>
-                <h5>{currentInternship[0]["position"]}</h5>
-
+                <h2>{currentJobs[0]["companyName"]}</h2>
+                <h5>{currentJobs[0]["position"]}</h5>
             </div>
 
             <div className={styles.element2}>
-                <span>{currentInternship[0]['salary']}</span>
-                <span>{currentInternship[0]['positionType']}</span>
-                <span>{currentInternship[0]['workMode']}</span>
-                <span>{currentInternship[0]['experienceRequired']}</span>
+                <span>{currentJobs[0]['salary']}</span>
+                <span>{currentJobs[0]['positionType']}</span>
+                <span>{currentJobs[0]['workMode']}</span>
+                <span>{currentJobs[0]['experienceRequired']}</span>
           </div>
 
 
@@ -48,16 +47,16 @@ export default function InternshipDetailsPage(){
 
             <div className={styles.element5}>
                 <h2>Roles and Responsibilities</h2>
-               {Array.isArray(currentInternship[0]["Description"]["rolesAndResponsibilities"])?
-                currentInternship[0]["Description"]["rolesAndResponsibilities"].map(element=>
+               {Array.isArray(currentJobs[0]["Description"]["rolesAndResponsibilities"])?
+                currentJobs[0]["Description"]["rolesAndResponsibilities"].map(element=>
                     (<li>{element}</li>)):<></>}
             </div>
 
 
             <div className={styles.element6}>
                 <h2>Requirements</h2>
-                {Array.isArray(currentInternship[0]["Description"]["requirements"])?
-                currentInternship[0]["Description"]["requirements"].map(element=>
+                {Array.isArray(currentJobs[0]["Description"]["requirements"])?
+                currentJobs[0]["Description"]["requirements"].map(element=>
                     (<li>{element}</li>)):<></>}
             </div>
 

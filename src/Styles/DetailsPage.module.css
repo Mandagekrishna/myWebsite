@@ -4,6 +4,8 @@
     grid-template-rows: repeat(16,1fr);
     height: 1000px;
     width: 1000px;
+    margin-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
  
 
 }
@@ -14,6 +16,21 @@
 
 }
 
+.element2{
+    display:flex;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start:2 ;
+    grid-row-end:3;
+    gap: 120px;
+    align-self: center;
+    font-size: x-small;
+   
+}
+span:last-of-type{
+    margin-left: auto;
+}
+
 
 
 .element3{
@@ -22,7 +39,7 @@
     grid-column-start: 14;
     grid-column-end: 17;
     grid-row-start: 2;
-    grid-row-end: 16;
+    grid-row-end: 13;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -47,3 +64,63 @@
  font-family:Verdana, Geneva, Tahoma, sans-serif
  
  }
+
+ .element4{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    font-size:small;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    /* margin-right: 10px; */
+
+ }
+
+ .element5{   
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 9;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* margin-right: 10px; */
+    padding-left: 10px;
+    font-size: x-small;
+    align-self:start;
+    gap: 10px;
+    padding-bottom: 20px;
+
+}
+
+.element6{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* margin-right: 10px; */
+    padding-left: 10px;
+    font-size: x-small;
+    align-self:start;
+    gap: 10px;
+    padding-bottom: 20px;
+    
+
+}
+
+.element7{
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 14;
+    grid-row-end:18;
+    /* grid-row-end: 13; */
+    margin-right:30px ;
+
+}
